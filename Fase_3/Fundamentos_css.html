@@ -1,0 +1,135 @@
+<html>
+    <head>
+        
+        <title> PROYECTO DE SITIO WEB </title>
+        <h1> Fundamentos y Frameworks de CSS  </h1>
+        <br>
+    
+<link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <div id="header">
+      
+    <ul class="nav">
+        
+        < <li><a href=../index.html>Inicio</a></li>
+        <li><a href="">Temas</a>
+            <ul>
+                <li><a href=Fundamentos_css.html>Fundamentos de CSS</a></li>
+                <li><a href=Frameworks_css.html>Frameworks CSS</a></li>
+            </ul>
+        </li>
+        <<li><a href="">Recursos Digitales</a>
+            <ul>
+                <li><a href=Recurso_01.html>Recurso 1</a></li>
+                <li><a href=Recurso_02.html>Recurso 2</a></li>
+            </ul>
+        </li>
+        <li><a href="">Aprendizaje</a>
+            <ul>
+                <li><a href=Actividad_01.html>Actividad 1</a></li>
+                <li><a href=Actividad_02.html>Actividad 2</a></li>
+            </ul>
+        </li>
+        <li><a href="">Acerca de</a>
+            <ul>
+                <li><a href=autor.html>Autor</a></li>
+            </ul>
+        </li>
+        </div>
+        </body>
+    </nav>
+   
+<br> </br>
+<br> </br>
+<br> </br>
+    <div class="contenedor">
+    <section><h2>Fundamentos de CSS</h2> 
+        <br>
+    
+<article>
+    <h3> ¿Que es CSS? </h3>
+    <p> <img src="../Fase_3/diseño_css.png" alt="Diseño CSS" class="derecha" style="width: 500px;"> </p> <br>
+    <p> CSS es un lenguaje de hojas de estilos creado para controlar el aspecto o presentación de los
+        documentos electrónicos definidos con HTML y XHTML. CSS es la mejor forma de separar los
+        contenidos y su presentación y es imprescindible para crear páginas web complejas.
+        
+        Separar la definición de los contenidos y la definición de su aspecto presenta numerosas
+        ventajas, ya que obliga a crear documentos HTML/XHTML bien definidos y con significado
+        completo (también llamados "documentos semánticos"). Además, mejora la accesibilidad del
+        documento, reduce la complejidad de su mantenimiento y permite visualizar el mismo
+        documento en infinidad de dispositivos diferentes. (Eguíluz Pérez, 2008) <br> </br> 
+        
+        </p>
+       <br> </br> </br> </br> </br> </br> </br> </br> </br> </br>
+       <p align="left"><img src="../Fase_3/sintaxis_css.png" class="izquierda"  alt="Sintaxis CSS" style="width: 500px;"> </p> <br>
+       <h3> Características y ventajas de las CSS </h3>
+       <p> el modo de funcionamiento de las CSS consiste en definir, mediante una sintaxis especial, la forma de presentación que le aplicaremos a los elementos de la página. <br> </br>
+
+        Podemos aplicar CSS a muchos niveles, desde un sitio web entero hasta una pequeña etiqueta. Estos son los principales bloques de acción. <br> </br>
+        
+        <b>Un web entero</b> , de modo que se puede definir en un único lugar el estilo de toda una web, de una sola vez. <br> </br>
+        <b>Un documento HTML</b> o página en particular. Se puede definir la forma de cada uno de los bloques de contenido de una página, en una declaración que afectará a un solo documento de un sitio web. <br> </br>
+        <b>Una porción del documento</b>, aplicando estilos visibles en un trozo de la página, como podría ser la cabecera.<br> </br>
+        <b>Una etiqueta en concreto</b>, llegando incluso a poder definir varios estilos diferentes para una sola etiqueta. Esto es muy importante ya que ofrece potencia en nuestra programación. Podemos definir, por ejemplo, varios tipos de párrafos: en rojo, en azul, con margenes, sin ellos... (Introducción a CSS, 2020) <br> </br> </p>
+        
+    
+        <h3> Los 3 tipos de estilos CSS </h3>
+        <h4> 1. CSS externo </h4>
+        <p> El CSS externo existe en su propio archivo. Este archivo está enlazado a un documento HTML con una etiqueta <link>. Este es el método más usado para añadir CSS a HTML, ya que una hoja de estilo externa puede dictar el estilo de diferentes documentos HTML. <br> </br>
+            Para crear un archivo CSS, escribe tu código en cualquier editor de texto o editor de código y guarda el archivo con la extensión .css; para vincularlo con un archivo de HTML, guarda tus HTML y CSS en la misma carpeta y luego pega el siguiente código dentro de la sección "head" del archivo HTML: <br> </br>
+            <p align="left"><img src="../Fase_3/ejemplo_001.png"     alt="Ejemplo" style="width: 500px;"> </p> <br>
+                
+                Agrega en "style.css" el nombre de tu archivo CSS. Las reglas de este archivo se aplicarán en cualquier archivo HTML que haga referencia a él con el elemento "link" de arriba. </p>
+                <p align="left"><img src="../Fase_3/css_externo.png"     alt="CSS Externo" style="width: 300px;"> </p> <br>
+
+                <h4> 2. CSS Interno </h4>
+                <p> El CSS interno es un código CSS incrustado en un documento HTLM. Está escrito dentro del elemento "style", que se acomoda en la sección de "head":  </br>
+                <p align="left"><img src="../Fase_3/css_interno.png"     alt="CSS Interno" style="width: 300px;"> </p> <br>
+                El CSS interno puede utilizarse para algunos proyectos pequeños de web y páginas individuales con su propio estilo. En estos casos será más fácil guardar todo tu código en el mismo archivo y no en dos. <br> </br> </p> 
+
+        <h4> 3. CSS en línea </h4>
+        <p> CSS en línea se ubica dentro de una etiqueta HTML para cambiar el estilo de un elemento en específico. La sintaxis inline es un poco diferente de lo que hemos visto: la declaración está escrita como el valor del atributo de estilo.<br>
+        <p align="left"><img src="../Fase_3/css_enlinea.png"     alt="CSS en linea" style="width: 500px;"> </p> <br> 
+        Aunque es posible, usar este método viola la práctica de separar el estilo del contenido, por eso no se recomienda su empleo. El CSS en línea es ineficiente para programar y resulta más difícil de comprender que los otros dos. Aun así, es bueno que lo conozcas para que lo puedas identificar, si se presenta el caso. <br> Informacion tomada de (Santos, 2022) <br> </br>  </p>
+
+        <h3> 4 ejemplos de CSS </h3>
+        <p> CSS es útil para llevar a cabo diversas modificaciones de estilo mediante el uso de código. Los siguientes ejemplos de CSS te darán un panorama de las posibilidades de uso del lenguaje para familiarizarte con algunas de sus implementaciones: <br>  </p>
+            </article> <br> </br>
+    
+<article>
+    <p> <b> Referencias webgrafia </b> <br> </br>
+        Romero, R. (2021, 24 mayo). Frameworks de CSS para el Desarrollo Web. REGOREMOR. de <a href="https://www.regoremor.com/desarrollo-web/css/frameworks-de-css-para-el-desarrollo-web/" <b> https://www.regoremor.com/desarrollo-web/css/frameworks-de-css-para-el-desarrollo-web/ </b> </a> </p> </br>
+        CSS Fundamentos | HTML, CSS y Bootstrap 5 (bluuweb). (s.f.). de /<a href="https://bluuweb.github.io/desarrollo-web-bluuweb/03-css/#vista-rapida" <b> https://bluuweb.github.io/desarrollo-web-bluuweb/03-css/#vista-rapida </b> </a> </p> </br>
+        Introducción a CSS. (2020b, febrero 7). Desarrollo Web, de <a href="https://desarrolloweb.com/articulos/181.php" <b> https://desarrolloweb.com/articulos/181.php </b> </a> </p> </br>
+        Eguíluz Pérez. (2008). Introducción a CSS. jesusda. <a href="https://www.jesusda.com/docs/ebooks/introduccion_css.pdf" <b> https://www.jesusda.com/docs/ebooks/introduccion_css.pdf </b> </a> </p> </br>
+        Santos, D. (2022b, agosto 9). Introducción al CSS: qué es, para qué sirve y otras 10 preguntas frecuentes, de <a href="https://blog.hubspot.es/website/que-es-css" <b> https://blog.hubspot.es/website/que-es-css </b> </a> </p> </br>
+        Pacheco, I. P. (2021b, febrero 1). Descubre que es CSS y sorpréndete con todo lo que puedes hacer. Plectro Lab, de <a href="https://plectrolab.com/que-es-css/" <b> https://plectrolab.com/que-es-css/ </b> </a> </p> </br>
+    </p>
+    </article> 
+</section>
+       
+        <aside>
+            <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw" 
+            align="center" width="380" height="1200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" >Tweets by UniversidadUNAD </a>
+                
+
+             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"> </script> 
+           
+        </aside>
+        <br> </br>
+    </div>
+    </body>
+
+<footer>
+    <p id="pie_pagina">
+    <p style="color:#f5f3f3";>
+        <br> Datos contacto del tutor </br> 
+        Josue Ignacio Ochoa Torres
+        Skype: josue8atorres
+        Actualizado: Septiembre 12 de 2022
+        <br> </br>
+    </p>
+    </footer>
