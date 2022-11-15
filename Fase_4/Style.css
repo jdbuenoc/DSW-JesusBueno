@@ -1,3 +1,7 @@
+@media only screen and (min-width: 600px) {
+    
+
+
 body{
     background-color: #ffdd90;
     background-image: url("Background_website.jpg"); 
@@ -52,5 +56,5 @@ p{
         padding: 5px;
         background-color: rgb(10, 76, 121);
         }
-        
-        
+  
+    }
